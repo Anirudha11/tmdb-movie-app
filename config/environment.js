@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'tmdb-movie-app',
+    modulePrefix: 'movie-app',
     environment,
     rootURL: '/',
     locationType: 'auto',
