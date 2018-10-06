@@ -1,5 +1,28 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{#paper-toolbar as |toolbar|}}
+  {{#toolbar.tools}}
+
+    <h1>FilmVerse</h1>
+    <span class="home_button">
+      {{#link-to "movie"}}
+      {{#paper-button onClick=(action 'rollbackToFavourites')}}
+        Home
+      {{/paper-button}}
+      {{/link-to}}
+
+    </span>
+
+    {{#link-to "myfavourite"}}
+    {{#paper-button onClick=(action 'rollbackToFavourites')}}
+    Favourites 
+    {{/paper-button}}
+    {{/link-to}}
+
+    {{#link-to "search"}}
+      {{#paper-button}}
+        Search
+      {{/paper-button}}
+    {{/link-to}}
+  {{/toolbar.tools}}
+{{/paper-toolbar}}
 
 {{outlet}}
