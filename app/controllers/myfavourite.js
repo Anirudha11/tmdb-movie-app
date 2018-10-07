@@ -12,4 +12,5 @@ export default Controller.extend({
       // this.transitionTo('myfavourite');
     }
   }
+  
 });

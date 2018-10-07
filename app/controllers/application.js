@@ -1,9 +1,14 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
-	actions :{
+	// actions :{
+	// 	rollbackToFavourites(){
+	// 		return this.store.rollbackAttributes();
+	// 	}
+	// }
+	actions: {
 		rollbackToFavourites(){
-			return this.store.rollbackAttributes();
+		  this.refresh();
 		}
-	}
+	  }
 });

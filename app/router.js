@@ -15,8 +15,8 @@ Router.map(function() {
   this.route('search');
 });
 
-Router.reopen({
-  location:'auto'
-});
+ Router.reopen({
+   location:'hash'
+ });
 
 export default Router;
